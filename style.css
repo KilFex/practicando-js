@@ -1,0 +1,47 @@
+html{
+    box-sizing: border-box;  
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+    max-width: 75rem; 
+    background-color: aqua;
+}
+.titulo{
+    text-align: left;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.descripcion{
+    text-align: center;
+    padding: 2rem;
+    text-align: left;
+}
+.gorillaz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.imagen-gorillaz{
+    height: 100%;
+}

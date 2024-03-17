@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Acceso a elementos con el DOM</title>
+</head>
+<body>
+<h1>Acceso a elementos con el DOM</h1>
+
+<!-- Un formulario simple -->
+<form id="miFormulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <button type="button" id="botonEnviar">Enviar</button>
+</form>
+
+<div id="resultado"></div>
+
+<script>
+// Accediendo a los elementos del DOM
+var formulario = document.getElementById("miFormulario");
+var botonEnviar = document.getElementById("botonEnviar");
+var resultado = document.getElementById("resultado");
+
+// Agregando un evento al botón de enviar
+botonEnviar.addEventListener("click", function() {
+    // Accediendo al valor de los campos de entrada
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+
+    // Mostrando los datos ingresados en el formulario
+    resultado.innerHTML = "<p>Nombre: " + nombre + "</p>" +
+                          "<p>Email: " + email + "</p>";
+});
+</script>
+
+</body>
+</html>
